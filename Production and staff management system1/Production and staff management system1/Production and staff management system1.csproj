@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Production_and_staff_management_system1</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Pic\backgrundMadmin.jpg" />
+    <None Remove="Pic\editBtn.jpg" />
+    <None Remove="Pic\emp.png" />
+    <None Remove="Pic\emply.jpg" />
+    <None Remove="Pic\green.jpg" />
+    <None Remove="Pic\medA.jpg" />
+    <None Remove="Pic\medarbejder admin.jpg" />
+    <None Remove="Pic\medarbejder_admin.jpg" />
+    <None Remove="Pic\newbutton.jfif" />
+    <None Remove="Pic\pro.png" />
+    <None Remove="Pic\product.jpg" />
+    <None Remove="Pic\red.png" />
+    <None Remove="Pic\savebtn2.png" />
+    <None Remove="Pic\SeekPng.com_back-button-png_875613.png" />
+    <None Remove="Pic\SeekPng.com_question-mark-png_211761.png" />
+    <None Remove="Pic\try.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="SAHB.GraphQL.Client" Version="2.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Pic\backgrundMadmin.jpg" />
+    <Resource Include="Pic\editBtn.jpg" />
+    <Resource Include="Pic\emp.png" />
+    <Resource Include="Pic\green.jpg" />
+    <Resource Include="Pic\medA.jpg" />
+    <Resource Include="Pic\newbutton.jfif" />
+    <Resource Include="Pic\pro.png" />
+    <Resource Include="Pic\red.png" />
+    <Resource Include="Pic\savebtn2.png" />
+    <Resource Include="Pic\SeekPng.com_back-button-png_875613.png" />
+    <Resource Include="Pic\SeekPng.com_question-mark-png_211761.png" />
+    <Resource Include="Pic\try.jpg" />
+  </ItemGroup>
+
+</Project>

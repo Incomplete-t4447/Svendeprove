@@ -1,0 +1,163 @@
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Production and staff management system1.exe
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Production and staff management system1.deps.json
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Production and staff management system1.runtimeconfig.json
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Production and staff management system1.runtimeconfig.dev.json
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Production and staff management system1.dll
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Production and staff management system1.pdb
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.csproj.AssemblyReference.cache
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\startPage.g.cs
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1_MarkupCompile.cache
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1_MarkupCompile.lref
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\startPage.baml
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.g.resources
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.AssemblyInfoInputs.cache
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.AssemblyInfo.cs
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.csproj.CoreCompileInputs.cache
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.dll
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.pdb
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.genruntimeconfig.cache
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\MainPage.g.cs
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\MainPage.baml
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\AdministrationsPage.g.cs
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\AdministrationsPage.baml
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\ProduktAdministrationsPage.g.cs
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\ProduktAdministrationsPage.baml
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Eksamplepage.g.cs
+C:\Users\Bjorn__Valhalla\source\repos\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Eksamplepage.baml
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Production and staff management system1.exe
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Production and staff management system1.deps.json
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Production and staff management system1.runtimeconfig.json
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Production and staff management system1.runtimeconfig.dev.json
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Production and staff management system1.dll
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Production and staff management system1.pdb
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.csproj.AssemblyReference.cache
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\AdministrationsPage.g.cs
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Eksamplepage.g.cs
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\MainPage.g.cs
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\ProduktAdministrationsPage.g.cs
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1_MarkupCompile.cache
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1_MarkupCompile.lref
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\AdministrationsPage.baml
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Eksamplepage.baml
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\MainPage.baml
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\ProduktAdministrationsPage.baml
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.g.resources
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.AssemblyInfoInputs.cache
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.AssemblyInfo.cs
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.csproj.CoreCompileInputs.cache
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.dll
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.pdb
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.genruntimeconfig.cache
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Http.dll
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\SAHB.GraphQL.Client.dll
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\System.Interactive.Async.dll
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.csproj.CopyComplete
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Production and staff management system1.exe
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Production and staff management system1.deps.json
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Production and staff management system1.runtimeconfig.json
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Production and staff management system1.runtimeconfig.dev.json
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Production and staff management system1.dll
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Production and staff management system1.pdb
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Http.dll
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\SAHB.GraphQL.Client.dll
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\System.Interactive.Async.dll
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.csproj.AssemblyReference.cache
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\AdministrationsPage.g.cs
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Eksamplepage.g.cs
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\MainPage.g.cs
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\ProduktAdministrationsPage.g.cs
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\startPage.g.cs
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1_MarkupCompile.cache
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1_MarkupCompile.lref
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\AdministrationsPage.baml
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Eksamplepage.baml
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\MainPage.baml
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\ProduktAdministrationsPage.baml
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\startPage.baml
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.g.resources
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.AssemblyInfoInputs.cache
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.AssemblyInfo.cs
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.csproj.CoreCompileInputs.cache
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.csproj.CopyComplete
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.dll
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.pdb
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.genruntimeconfig.cache
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\startPage.g.cs
+C:\Users\Micheal\OneDrive\Skrivebord\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\startPage.baml
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\MedarbejderAdministrationsPage.baml
+C:\Users\Bjorn__Valhalla\Desktop\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\MedarbejderAdministrationsPage.g.cs
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Production and staff management system1.exe
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Production and staff management system1.deps.json
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Production and staff management system1.runtimeconfig.json
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Production and staff management system1.runtimeconfig.dev.json
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Production and staff management system1.dll
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Production and staff management system1.pdb
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Http.dll
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\SAHB.GraphQL.Client.dll
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\System.Interactive.Async.dll
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.csproj.AssemblyReference.cache
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\MedarbejderAdministrationsPage.baml
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\AdministrationsPage.g.cs
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Eksamplepage.g.cs
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\MainPage.g.cs
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\MedarbejderAdministrationsPage.g.cs
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\ProduktAdministrationsPage.g.cs
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\startPage.g.cs
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1_MarkupCompile.cache
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1_MarkupCompile.lref
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\AdministrationsPage.baml
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Eksamplepage.baml
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\MainPage.baml
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\ProduktAdministrationsPage.baml
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\startPage.baml
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.g.resources
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.AssemblyInfoInputs.cache
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.AssemblyInfo.cs
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.csproj.CoreCompileInputs.cache
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.csproj.CopyComplete
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.dll
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.pdb
+C:\Users\Micheal\OneDrive\Skrivebord\svendeprøve svend\Production and staff management system1\Production and staff management system1\obj\Debug\netcoreapp3.1\Production and staff management system1.genruntimeconfig.cache

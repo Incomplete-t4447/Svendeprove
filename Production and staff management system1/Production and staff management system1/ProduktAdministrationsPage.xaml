@@ -1,0 +1,1171 @@
+﻿<Page x:Class="Production_and_staff_management_system1.ProduktAdministrationsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Production_and_staff_management_system1"
+      xmlns:sys="clr-namespace:System;assembly=System.Runtime"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="ProduktAdministrationsPage"
+      Background="#FFB6DBFF"
+      Loaded="ProduktAdministrationsPage_OnLoaded">
+    <Page.Resources>
+        <Style x:Key="OptionMarkFocusVisual">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle Margin="14,0,0,0" StrokeDashArray="1 2" SnapsToDevicePixels="true" StrokeThickness="1" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <SolidColorBrush x:Key="OptionMark.Static.Glyph" Color="#FF212121"/>
+        <SolidColorBrush x:Key="OptionMark.MouseOver.Background" Color="#FFF3F9FF"/>
+        <SolidColorBrush x:Key="OptionMark.MouseOver.Border" Color="#FF5593FF"/>
+        <SolidColorBrush x:Key="OptionMark.MouseOver.Glyph" Color="#FF212121"/>
+        <SolidColorBrush x:Key="OptionMark.Pressed.Background" Color="#FFD9ECFF"/>
+        <SolidColorBrush x:Key="OptionMark.Pressed.Border" Color="#FF3C77DD"/>
+        <SolidColorBrush x:Key="OptionMark.Pressed.Glyph" Color="#FF212121"/>
+        <SolidColorBrush x:Key="OptionMark.Disabled.Background" Color="#FFE6E6E6"/>
+        <SolidColorBrush x:Key="OptionMark.Disabled.Border" Color="#FFBCBCBC"/>
+        <SolidColorBrush x:Key="OptionMark.Disabled.Glyph" Color="#FF707070"/>
+        <ControlTemplate x:Key="CheckBoxTemplate1" TargetType="{x:Type CheckBox}">
+            <Grid x:Name="templateRoot" Background="Transparent" SnapsToDevicePixels="True">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Border x:Name="checkBoxBorder" Background="{TemplateBinding Background}" BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="1" VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
+                    <Grid x:Name="markGrid" Height="50" Width="50">
+                        <Path x:Name="optionMark" Data="F1 M 9.97498,1.22334L 4.6983,9.09834L 4.52164,9.09834L 0,5.19331L 1.27664,3.52165L 4.255,6.08833L 8.33331,1.52588e-005L 9.97498,1.22334 Z " Fill="{StaticResource OptionMark.Static.Glyph}" Margin="1" Opacity="0" Stretch="None"/>
+                        <Rectangle x:Name="indeterminateMark" Fill="{StaticResource OptionMark.Static.Glyph}" Margin="2,2,2,-5" Opacity="0"/>
+                    </Grid>
+                </Border>
+                <ContentPresenter x:Name="contentPresenter" Grid.Column="1" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="HasContent" Value="true">
+                    <Setter Property="FocusVisualStyle" Value="{StaticResource OptionMarkFocusVisual}"/>
+                    <Setter Property="Padding" Value="4,-1,0,0"/>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Background" TargetName="checkBoxBorder" Value="{StaticResource OptionMark.MouseOver.Background}"/>
+                    <Setter Property="BorderBrush" TargetName="checkBoxBorder" Value="{StaticResource OptionMark.MouseOver.Border}"/>
+                    <Setter Property="Fill" TargetName="optionMark" Value="{StaticResource OptionMark.MouseOver.Glyph}"/>
+                    <Setter Property="Fill" TargetName="indeterminateMark" Value="{StaticResource OptionMark.MouseOver.Glyph}"/>
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="false">
+                    <Setter Property="Background" TargetName="checkBoxBorder" Value="{StaticResource OptionMark.Disabled.Background}"/>
+                    <Setter Property="BorderBrush" TargetName="checkBoxBorder" Value="{StaticResource OptionMark.Disabled.Border}"/>
+                    <Setter Property="Fill" TargetName="optionMark" Value="{StaticResource OptionMark.Disabled.Glyph}"/>
+                    <Setter Property="Fill" TargetName="indeterminateMark" Value="{StaticResource OptionMark.Disabled.Glyph}"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="true">
+                    <Setter Property="Background" TargetName="checkBoxBorder" Value="{StaticResource OptionMark.Pressed.Background}"/>
+                    <Setter Property="BorderBrush" TargetName="checkBoxBorder" Value="{StaticResource OptionMark.Pressed.Border}"/>
+                    <Setter Property="Fill" TargetName="optionMark" Value="{StaticResource OptionMark.Pressed.Glyph}"/>
+                    <Setter Property="Fill" TargetName="indeterminateMark" Value="{StaticResource OptionMark.Pressed.Glyph}"/>
+                </Trigger>
+                <Trigger Property="IsChecked" Value="true">
+                    <Setter Property="Opacity" TargetName="optionMark" Value="1"/>
+                    <Setter Property="Opacity" TargetName="indeterminateMark" Value="0"/>
+                </Trigger>
+                <Trigger Property="IsChecked" Value="{x:Null}">
+                    <Setter Property="Opacity" TargetName="optionMark" Value="0"/>
+                    <Setter Property="Opacity" TargetName="indeterminateMark" Value="1"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </Page.Resources>
+
+
+    <Grid Margin="50,20,50,20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <Grid Grid.Row="0"
+              x:Name="ProduktHeader">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.3*"></RowDefinition>
+                <RowDefinition Height="0.1*"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <!-- ........................................ Header .................. -->
+            <TextBlock Grid.Row="0" 
+                Text="Produkt Ordre Administration"
+                FontSize="56"
+                Foreground="Black"
+                FontWeight="Bold" 
+                FontStyle="Italic">
+
+            </TextBlock>
+
+            <!-- ........................................ Knapper  new, edit og save .................. -->
+            <StackPanel Grid.Row="2">
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,10">
+                    <TextBlock Text="Ordre" 
+                               FontSize="36" 
+                               TextDecorations="Underline" 
+                               FontWeight="Bold"
+                               Width="250"
+                               VerticalAlignment="Bottom"></TextBlock>
+                    <TextBox x:Name="OrdreNummerTxt" 
+                             BorderBrush="Gray"
+                             BorderThickness="2"
+                             Background="#FFBFE9F7"
+                             Width="200" KeyDown="EnterHitKeyId"
+                             PreviewTextInput="Orderenummer_textimput">
+                        <TextBox.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="3"/>
+                            </Style>
+                        </TextBox.Resources>
+
+
+                    </TextBox>
+                    <Button x:Name="NewPruduct"  Margin="20,0,0,0" Click="NewProduct_Click">
+
+                        <Image Source="/Pic/newbutton.jfif"
+
+                               Stretch="Uniform" Height="65" Width="65">
+
+                        </Image>
+                    </Button>
+                     <Button x:Name="EditPruduct"  Margin="20,0,0,0" Click="EditBtn_Click"  >
+
+                        <Image Source="/Pic/editBtn.jpg"
+
+                               Stretch="Uniform" Height="65" Width="65">
+
+                        </Image>
+                    </Button>
+                    <Button x:Name="SavePruduct"  Margin="20,0,0,0" Click="SaveBtn_Click" >
+
+                        <Image Source="/Pic/savebtn2.png"
+
+                               Stretch="Uniform" Height="65" Width="65">
+
+                        </Image>
+                    </Button>
+                </StackPanel>
+
+               <!-- .................................................. kunde info visning ................. -->
+                <StackPanel x:Name="KundeInfoStackVisning" 
+                            Orientation="Horizontal" 
+                            Margin="0,10,0,10"
+                            Visibility="Visible">
+                    <TextBlock Text="Kunde" 
+                               x:Name="Kundeblockh"
+                               FontSize="36" 
+                               TextDecorations="Underline" 
+                               FontWeight="Bold"
+                               Margin="0,0,0,0"
+                               Width="250"></TextBlock>
+                    <TextBlock Text="*Kunde Navn Her*" 
+                               x:Name="VirksomhedNavnTxt"
+                               FontSize="36" 
+                               TextDecorations="Underline" 
+                               FontWeight="Bold"
+                               Margin="0,0,0,0"></TextBlock>
+                    <TextBlock Text="*Kunde Adresse her*" 
+                               x:Name="KundeAdresseTxt"
+                               FontSize="36" 
+                               TextDecorations="Underline" 
+                               FontWeight="Bold"
+                               Margin="20,0,0,0"></TextBlock>
+                    <TextBlock Text="*Kunde Kontakt her*" 
+                               x:Name="KundeMailEllerTlfTxt"
+                               FontSize="36" 
+                               TextDecorations="Underline" 
+                               FontWeight="Bold"
+                               Margin="20,0,0,0"></TextBlock>
+                    <TextBlock Text="*Kunde KontaktPerson*" 
+                               x:Name="KundeKontaktNavnTxt"
+                               FontSize="36" 
+                               TextDecorations="Underline" 
+                               FontWeight="Bold"
+                               Margin="20,0,0,0"></TextBlock>
+
+                </StackPanel>
+                <StackPanel x:Name="KundeInfoStackEdit" 
+                            Orientation="Horizontal" 
+                            Margin="0,10,0,10"
+                            Visibility="Collapsed">
+                    <TextBlock Text="Kunde" 
+                               x:Name="Kundeblock"
+                               FontSize="36" 
+                               TextDecorations="Underline" 
+                               FontWeight="Bold"
+                               Margin="0,0,0,0"
+                               Width="250"></TextBlock>
+                    <TextBox Text="*Kunde Navn Her*" 
+                               x:Name="VirksomhedNavnTxtEdit"
+                               FontSize="36" 
+                               Width="350"
+                               FontWeight="Bold"
+                               Margin="0,0,0,0"
+                               GotFocus="TextBox_GotFocus"></TextBox>
+                    <TextBox   Text="*Kunde Adresse her*" 
+                               x:Name="KundeAdresseTxtEdit"
+                               FontSize="36" 
+                               Width="350"
+                               FontWeight="Bold"
+                               Margin="20,0,0,0"
+                               GotFocus="TextBox_GotFocus"></TextBox>
+                    <TextBox Text="*Kunde Kontakt her*" 
+                               x:Name="KundeMailEllerTlfTxtEdit"
+                               FontSize="36" 
+                               Width="350"
+                               FontWeight="Bold"
+                               Margin="20,0,0,0"
+                               GotFocus="TextBox_GotFocus"
+                               PreviewTextInput="Orderenummer_textimput"></TextBox>
+                    <TextBox Text="*Kunde KontaktPerson*" 
+                               x:Name="KundeKontaktNavnTxtEdit"
+                               FontSize="36"
+                               FontWeight="Bold"
+                               Margin="20,0,0,0"
+                               Width="450"
+                               GotFocus="TextBox_GotFocus"></TextBox>
+
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,10">
+                    <TextBlock Text="Status" 
+                               FontSize="36" 
+                               TextDecorations="Underline" 
+                               FontWeight="Bold"
+                               Width="250"></TextBlock>
+                    <TextBlock x:Name="StatusTxt" 
+                               FontSize="36"
+                               Text="*Status her*" FontWeight="Bold"
+                               ></TextBlock>
+                </StackPanel>
+
+            </StackPanel>
+
+
+
+
+
+
+
+        </Grid>
+        <Grid Grid.Row="1"
+              x:Name="ProduktDataGrid">
+            <TabControl Grid.Row="0" Background="#FFC8E0E0">
+                <TabItem Header="Tab 1">
+                    <Grid Background="#FF9BCBF9">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <!-- ..............................................  Kvantitet med textboxe indhold! ................... -->
+                        <Grid Grid.Row="0" x:Name="KvantitetGridMedTxt" Visibility="Collapsed">
+                            <Border BorderBrush="Black" 
+                                    CornerRadius="5" 
+                                    BorderThickness="2">
+
+                            </Border>
+                            <StackPanel Grid.Row="0">
+
+                                <StackPanel  Orientation="Horizontal" >
+                                    <TextBlock 
+                                        Text="Kvantitet:" 
+                                        FontSize="36" 
+                                        Margin="10,0,0,0"
+                                        FontWeight="Bold"></TextBlock>
+
+
+                                </StackPanel>
+                                <Border BorderBrush="Black" 
+                                        BorderThickness="1" 
+                                        HorizontalAlignment="Left" 
+                                        Width="1820" />
+
+
+                                <StackPanel  Orientation="Horizontal">
+                                    <!-- ............................ 1 ....................... -->
+                                    <TextBlock 
+                                        Text="Antal" 
+                                        FontSize="36" 
+                                        TextDecorations="Underline" 
+                                        FontWeight="Bold"
+                                        Width="250"
+                                        Margin="10,0,0,0"></TextBlock>
+                                    <TextBox 
+                                        Width="200" 
+                                        x:Name="AntalTxt" 
+                                        BorderBrush="Gray"
+                                        BorderThickness="2"
+                                        Background="#FFBFE9F7"
+                                        Margin="0,0,0,0"
+                                        FontSize="36"
+                                        PreviewTextInput="Orderenummer_textimput">
+                                        <TextBox.Resources>
+                                            <Style TargetType="{x:Type Border}">
+                                                <Setter Property="CornerRadius" Value="3"/>
+                                            </Style>
+                                        </TextBox.Resources>
+                                    </TextBox>
+                                    <!-- ............................ 2 ....................... -->
+                                    <TextBlock
+                                        Text="K.Bredde" 
+                                        FontSize="36" 
+                                        TextDecorations="Underline" 
+                                        FontWeight="Bold" 
+                                        Margin="50,0,0,0"
+                                        Width="250"></TextBlock>
+                                    <TextBox Width="200" 
+                                         x:Name="KBredeTxt" 
+                                         BorderBrush="Gray"
+                                         BorderThickness="2"
+                                         Background="#FFBFE9F7"
+                                         Margin="0,0,0,0"
+                                         FontSize="36"
+                                         PreviewTextInput="Orderenummer_textimput">
+                                        <TextBox.Resources>
+                                            <Style TargetType="{x:Type Border}">
+                                                <Setter Property="CornerRadius" Value="3"/>
+                                            </Style>
+                                        </TextBox.Resources>
+                                    </TextBox>
+                                </StackPanel>
+
+
+                                <StackPanel  Orientation="Horizontal">
+
+                                    <!-- ............................ 1 ....................... -->
+                                    <TextBlock 
+                                        Text="Matriale" 
+                                        FontSize="36" 
+                                        TextDecorations="Underline" 
+                                        FontWeight="Bold"
+                                        Margin="10,20,0,0"
+                                        Width="250"></TextBlock>
+                                    <TextBlock 
+                                        Visibility="Collapsed"
+                                        x:Name="matrialeTxt"
+                                        Text="*Matriale*"
+                                        FontSize="36" 
+                                        TextDecorations="Underline" 
+                                        FontWeight="Bold" 
+                                        Margin="0,0,0,0"
+                                        Width="200"
+                                        VerticalAlignment="Bottom">
+                                    </TextBlock>
+                                    <ComboBox 
+                                            x:Name="MatrialeCombo"
+                                            Visibility="Visible" 
+                                            Width="200"
+                                            Height="55"
+                                            BorderBrush="Gray"
+                                            BorderThickness="2"
+                                            Background="#FFBFE9F7"
+                                            FontSize="36" 
+                                            FontWeight="Bold"
+                                            
+                                        >
+                                        <ComboBoxItem IsSelected="True" Content="Vælg"></ComboBoxItem>
+                                        <ComboBoxItem Content="Træ"></ComboBoxItem>
+                                        <ComboBoxItem Content="Plast"></ComboBoxItem>
+                                    </ComboBox>
+
+                                    <!-- ............................ 2 ....................... -->
+                                    <TextBlock
+                                        Text="K.Højde  " 
+                                        FontSize="36" 
+                                        TextDecorations="Underline" 
+                                        FontWeight="Bold" 
+                                        Margin="50,20,0,0"
+                                        Width="250"></TextBlock>
+                                    <TextBox Width="200" 
+                                         x:Name="KHojdeTxt" 
+                                         BorderBrush="Gray"
+                                         BorderThickness="2"
+                                         Background="#FFBFE9F7"
+                                         Margin="0,20,0,0"
+                                         FontSize="36">
+                                        <TextBox.Resources>
+                                            <Style TargetType="{x:Type Border}">
+                                                <Setter Property="CornerRadius" Value="3"/>
+                                            </Style>
+                                        </TextBox.Resources>
+                                    </TextBox>
+
+
+                                </StackPanel>
+
+                            </StackPanel>
+
+                        </Grid>
+                        <!-- ..............................................  Kvantitet med visning indhold! ................... -->
+                        <Grid Grid.Row="0" x:Name="KvantitetGridvising" Visibility="Visible">
+                            <Border BorderBrush="Black" 
+                                    CornerRadius="5" 
+                                    BorderThickness="2">
+
+                            </Border>
+                            <StackPanel Grid.Row="0">
+
+                                <StackPanel  Orientation="Horizontal" >
+                                    <TextBlock 
+                                        Text="Kvantitet:" 
+                                        FontSize="36" 
+                                        Margin="10,0,0,0"
+                                        FontWeight="Bold"></TextBlock>
+
+
+                                </StackPanel>
+                                <Border BorderBrush="Black" 
+                                        BorderThickness="1" 
+                                        HorizontalAlignment="Left" 
+                                        Width="1820" />
+
+
+                                <StackPanel  Orientation="Horizontal">
+                                    <!-- ............................ 1 ....................... -->
+                                    <TextBlock 
+                                        Text="Antal" 
+                                        FontSize="36" 
+                                        TextDecorations="Underline" 
+                                        FontWeight="Bold"
+                                        Width="250"
+                                        Margin="10,0,0,0"></TextBlock>
+                                    <TextBlock 
+                                        Text="*Antal*" 
+                                        x:Name="AntalVisning"
+                                        FontSize="36" 
+                                        TextDecorations="Underline" 
+                                        FontWeight="Bold"
+                                        Width="250"
+                                        Margin="10,0,0,0"></TextBlock>
+
+                                    <!-- ............................ 2 ....................... -->
+                                    <TextBlock
+                                        Text="K.Bredde" 
+                                        FontSize="36" 
+                                        TextDecorations="Underline" 
+                                        FontWeight="Bold" 
+                                        Margin="10,0,0,0"
+                                        Width="250"></TextBlock>
+                                    <TextBlock
+                                        Text="*K.Brede*" 
+                                        x:Name="KBredeVisning"
+                                        FontSize="36" 
+                                        TextDecorations="Underline" 
+                                        FontWeight="Bold" 
+                                        Margin="10,0,0,0"
+                                        Width="250"></TextBlock>
+                                    
+                                </StackPanel>
+
+
+                                <StackPanel  Orientation="Horizontal">
+
+                                    <!-- ............................ 1 ....................... -->
+                                    <TextBlock 
+                                        Text="Matriale" 
+                                        FontSize="36" 
+                                        TextDecorations="Underline" 
+                                        FontWeight="Bold"
+                                        Margin="10,20,0,0"
+                                        Width="250"></TextBlock>
+                                    <TextBlock 
+                                        Visibility="Visible"
+                                        x:Name="matrialeVisning"
+                                        Text="*Matriale*"
+                                        FontSize="36" 
+                                        TextDecorations="Underline" 
+                                        FontWeight="Bold" 
+                                        Margin="10,0,0,0"
+                                        Width="250"
+                                        VerticalAlignment="Bottom">
+                                    </TextBlock>
+                                    
+
+                                    <!-- ............................ 2 ....................... -->
+                                    <TextBlock
+                                        Text="K.Højde  " 
+                                        FontSize="36" 
+                                        TextDecorations="Underline" 
+                                        FontWeight="Bold" 
+                                        Margin="10,20,0,0"
+                                        Width="250"></TextBlock>
+                                    <TextBlock
+                                        Text="*K.Højde*" 
+                                        x:Name="khojdeVisning"
+                                        FontSize="36" 
+                                        TextDecorations="Underline" 
+                                        FontWeight="Bold" 
+                                        Margin="10,20,0,0"
+                                        Width="250"></TextBlock>
+                                   
+
+                                </StackPanel>
+
+                            </StackPanel>
+
+                        </Grid>
+                        <!-- ..............................................  Data steps indhold! ................... -->
+                        <!-- ................................................ Steps til træ produkttion ............................. -->
+                        <Grid x:Name="TræStepsGrid" Visibility="visible"  Grid.Row="2"  Margin="0,15,0,0">
+                            <Border BorderBrush="Black" CornerRadius="5" BorderThickness="2">
+
+                            </Border>
+                            <StackPanel Grid.Row="0">
+
+                                <StackPanel  Orientation="Horizontal" >
+                                    <TextBlock 
+                                        Text="Steps:" 
+                                        FontSize="36" 
+                                        Margin="10,0,0,0"
+                                        FontWeight="Bold"></TextBlock>
+
+
+                                </StackPanel>
+                                <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Width="1820" />
+
+
+                                <StackPanel x:Name="OversteComboStack" Orientation="Horizontal">
+                                    <!-- ............................ bliver udfyld dynamisk i code behind ....................... -->
+
+                                    
+
+                                </StackPanel>
+
+
+                                <StackPanel x:Name="NederestComboStack" Orientation="Horizontal">
+
+                                    <!-- ............................ bliver udfyld dynamisk i code behind ....................... -->
+                                    
+
+
+
+
+                                </StackPanel>
+
+                            </StackPanel>
+
+                        </Grid>
+
+                        <!-- ........................................... visning date time indhold ..................... -->
+
+                        <Grid x:Name="ShowDate" Grid.Row="1" 
+                              Visibility="Visible"  
+                              Margin="0,15,0,0">
+
+                            <Border BorderBrush="Black" 
+                                    CornerRadius="5" 
+                                    BorderThickness="2">
+
+                            </Border>
+                            <StackPanel Grid.Row="0">
+
+                                <StackPanel  Orientation="Horizontal" >
+                                    <TextBlock Text="Dato Tid:" 
+                                           FontSize="36" 
+                                           Margin="10,0,0,0"
+                                           FontWeight="Bold"></TextBlock>
+
+
+                                </StackPanel>
+                                <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Width="1820" />
+
+
+                                <StackPanel  Orientation="Horizontal">
+                                    <!-- ............................ 1 ....................... -->
+                                    <TextBlock 
+                                        Text="Bestilt D." 
+                                        FontSize="36" 
+                                        TextDecorations="Underline" 
+                                        FontWeight="Bold"
+                                        Margin="10,20,0,0"
+                                        Width="250"></TextBlock>
+                                    <TextBlock Text="*Bestillingsdato*" 
+                                               x:Name="BestillingsdatoTB"
+                                               FontSize="36" 
+                                               TextDecorations="Underline" 
+                                               FontWeight="Bold" 
+                                               Margin="0,20,0,0"
+                                               Width="350"></TextBlock>
+
+                                    <!-- ............................ 2 ....................... -->
+                                    <TextBlock 
+                                        Text="Frist D." 
+                                        FontSize="36" 
+                                        TextDecorations="Underline" 
+                                        FontWeight="Bold" 
+                                        Margin="0,20,0,0"
+                                        Width="250"></TextBlock>
+                                    <TextBlock Text="*Tidsfrist*" 
+                                               x:Name="TidsfristTB"
+                                               FontSize="36" 
+                                               TextDecorations="Underline" 
+                                               FontWeight="Bold" 
+                                               Margin="0,20,0,0"
+                                               Width="350"></TextBlock>
+                                </StackPanel>
+
+
+                                <StackPanel  Orientation="Horizontal">
+
+                                    <!-- ............................ 1 ....................... -->
+                                    <TextBlock 
+                                        Text="Påbegyndt D. " 
+                                        FontSize="36" 
+                                        TextDecorations="Underline" 
+                                        FontWeight="Bold"
+                                        Margin="10,20,0,0"
+                                        Width="250"></TextBlock>
+                                    <TextBlock Text="*påbegyndt*" 
+                                               x:Name="påBegyndtTB"
+                                               FontSize="36" 
+                                               TextDecorations="Underline" 
+                                               FontWeight="Bold" 
+                                               Margin="0,20,0,0"
+                                               Width="350"></TextBlock>
+                                    <!-- ............................ 2 ....................... -->
+                                    <TextBlock 
+                                        Text="Afsendelse D." 
+                                        FontSize="36" 
+                                        TextDecorations="Underline" 
+                                        FontWeight="Bold" 
+                                        Margin="0,20,0,0"
+                                        Width="250"></TextBlock>
+                                    <TextBlock Text="*Færdig*" 
+                                               x:Name="FærdigTB"
+                                               FontSize="36" 
+                                               TextDecorations="Underline" 
+                                               FontWeight="Bold" 
+                                               Margin="0,20,0,0"
+                                               Width="350"></TextBlock>
+
+
+
+
+                                </StackPanel>
+
+
+                            </StackPanel>
+
+                        </Grid>
+
+                        <!-- .......................................... edit datetime indhold grid .............. -->
+
+
+                        <Grid  x:Name="editDate" Grid.Row="1" Visibility="Collapsed"  Margin="0,15,0,0">
+                            <Border BorderBrush="Black" CornerRadius="5" BorderThickness="2">
+
+                            </Border>
+                            <StackPanel Grid.Row="0">
+
+                                <StackPanel  Orientation="Horizontal" >
+                                    <TextBlock Text="Dato Tid:" 
+                                           FontSize="36" 
+                                           Margin="10,0,0,0"
+                                           FontWeight="Bold"></TextBlock>
+
+
+                                </StackPanel>
+                                <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Width="1820" />
+
+
+                                <StackPanel  Orientation="Horizontal">
+                                    <!-- ............................ 1 ....................... -->
+                                    <TextBlock Text="Oprettet D." 
+                                               FontSize="36" 
+                                               TextDecorations="Underline" 
+                                               FontWeight="Bold"
+                                               Margin="10,20,0,0"
+                                               Width="250"></TextBlock>
+                                    <TextBlock Text="*Dags Dato*"
+                                               x:Name="DagsDatoTxt"
+                                               FontSize="36" 
+                                               TextDecorations="Underline" 
+                                               FontWeight="Bold"
+                                               Margin="10,20,0,0"
+                                               Width="350"></TextBlock>
+
+                                    <!-- ............................ 2 ....................... -->
+                                    <TextBlock Text="Tidsfrist" 
+                                               FontSize="36" 
+                                               TextDecorations="Underline" 
+                                               FontWeight="Bold" 
+                                               Margin="0,20,0,0"
+                                               Width="250"></TextBlock>
+                                    <DatePicker Foreground="Black"  
+                                                Background="#FFBFE9F7" 
+                                                FontSize="36"
+                                                FontWeight="Bold"
+                                                x:Name="datePicker2" 
+                                                Width="250" 
+                                                Height="50"  
+                                                VerticalAlignment="Bottom" 
+                                                Margin="0,0,10,0" >
+                                        <DatePicker.Style>
+                                            <Style TargetType="DatePicker">
+                                                <Setter Property="IsDropDownOpen" Value="False"></Setter>
+                                                <Style.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter Property="IsDropDownOpen" Value="True"></Setter>
+                                                    </Trigger>
+                                                    <Trigger Property="IsMouseOver" Value="False">
+                                                        <Setter Property="IsDropDownOpen" Value="False"></Setter>
+                                                    </Trigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </DatePicker.Style>
+                                    </DatePicker>
+                                </StackPanel>
+
+
+                                <StackPanel  Orientation="Horizontal">
+
+                                    <!-- ............................ 1 ....................... -->
+                                    <TextBlock Text="Produkt start" 
+                                           FontSize="36" 
+                                           TextDecorations="Underline" 
+                                           FontWeight="Bold"
+                                           Margin="10,20,0,0"
+                                           Width="250"></TextBlock>
+                                    <TextBlock Text="*påbegyndt*" 
+                                               FontSize="36" 
+                                               TextDecorations="Underline" 
+                                               FontWeight="Bold" 
+                                               Margin="0,20,10,0"
+                                               Width="350"></TextBlock>
+                                    <!-- ............................ 2 ....................... -->
+                                    <TextBlock Text="Afsluttet" 
+                                               FontSize="36" 
+                                               TextDecorations="Underline" 
+                                               FontWeight="Bold" 
+                                               Margin="0,20,0,0"
+                                               Width="250"></TextBlock>
+                                    <TextBlock Text="*Færdig*" 
+                                               FontSize="36" 
+                                               TextDecorations="Underline" 
+                                               FontWeight="Bold" 
+                                               Margin="0,20,0,0"
+                                               Width="350"></TextBlock>
+
+
+
+
+                                </StackPanel>
+
+                            </StackPanel>
+
+                        </Grid>
+
+                    </Grid>
+                </TabItem>
+
+
+                <!-- .................................................... tap 2 data ...................... -->
+                <TabItem Header="Tab 2" >
+                    <Grid x:Name="Tap2Grid" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.5*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"/>
+                           
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Row="0" Grid.Column="0" BorderBrush="Black"
+                                Margin="10"
+                                CornerRadius="5" 
+                                BorderThickness="2">
+
+                        </Border>
+                        <StackPanel Grid.Row="0" Grid.Column="0"  Margin="10">
+                           
+                            <TextBlock 
+                                       Text="Produkter" 
+                                       FontSize="36" 
+                                       TextDecorations="Underline"
+                                       HorizontalAlignment="Center"
+                                       FontWeight="Bold" 
+                            ></TextBlock>
+                            <ScrollViewer Margin="10">
+                                <ComboBox x:Name="SeeAllProductsCombo" SelectionChanged="ProductDropDownChange">
+                                    
+                                </ComboBox>
+                            </ScrollViewer>
+
+                        </StackPanel>
+
+
+                        <Grid Grid.Row="1" Grid.Column="0" Margin="10">
+                            <Border BorderBrush="Black" 
+                                    CornerRadius="5" 
+                                    BorderThickness="2">
+
+                            </Border>
+
+                            <TextBlock Text="Kunde info:" 
+                                       FontSize="36" 
+                                       TextDecorations="Underline" 
+                                       FontWeight="Bold" 
+                                       HorizontalAlignment="Center"
+                                       Margin="0,10,0,10"
+                            ></TextBlock>
+                            <StackPanel  HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <TextBlock Text="Kunde info" 
+                                           FontSize="36" 
+                                           TextDecorations="Underline" 
+                                           FontWeight="Bold" 
+                                           HorizontalAlignment="Center"
+                                           Margin="0,10,0,10"
+                                           x:Name="KundeNavn"
+                                ></TextBlock>
+                                <TextBlock Text="Kunde info" 
+                                           FontSize="36" 
+                                           TextDecorations="Underline" 
+                                           FontWeight="Bold" 
+                                           HorizontalAlignment="Center"
+                                           Margin="0,10,0,10"
+                                           x:Name="KundeAdressse"
+                                ></TextBlock>
+                                <TextBlock Text="Kunde info" 
+                                           FontSize="36" 
+                                           TextDecorations="Underline" 
+                                           FontWeight="Bold" 
+                                           HorizontalAlignment="Center"
+                                           Margin="0,10,0,10"
+                                           x:Name="KundeTlfNum"
+                                           
+                                ></TextBlock>
+                                <TextBlock Text="Kunde info" 
+                                           FontSize="36" 
+                                           TextDecorations="Underline" 
+                                           FontWeight="Bold" 
+                                           HorizontalAlignment="Center"
+                                           Margin="0,10,0,10"
+                                           x:Name="KundeKontakt"
+                                ></TextBlock>
+
+                            </StackPanel>
+
+                            
+
+
+                        </Grid>
+
+                        <Border Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" BorderBrush="Black"
+                                Margin="10"
+                                CornerRadius="5" 
+                                BorderThickness="2"
+                        >
+
+                        </Border>
+                        <Grid Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" HorizontalAlignment="Center">
+                            
+                            <TextBlock Text="Produkt info " 
+                                       FontSize="36" 
+                                       TextDecorations="Underline" 
+                                       FontWeight="Bold" 
+                                       HorizontalAlignment="Center"
+                                       Margin="0,10,0,10"
+                            ></TextBlock>
+                            <!-- ............................................ venstre ................ -->
+                            <StackPanel Orientation="Horizontal">
+                                <!-- ............................................1 ................... -->
+                               
+                                <StackPanel
+                                Margin="0,075,20,0">
+                                    <TextBlock Text="Antal:" 
+                                               FontSize="36" 
+                                               TextDecorations="Underline" 
+                                               FontWeight="Bold" 
+                                               HorizontalAlignment="Center"
+                                           
+                                    ></TextBlock>
+                                    <StackPanel Orientation="Horizontal"
+                                                Margin="0,0,0,0"
+                                                HorizontalAlignment="Center">
+
+                                        <TextBlock Text="Karme" 
+                                               FontSize="36" 
+                                               FontWeight="Bold" 
+                                               HorizontalAlignment="Center"
+                                               Width="200">
+                                        </TextBlock>
+                                        <TextBlock Text="*Antal*" 
+                                               FontSize="36" 
+                                               FontWeight="Bold" 
+                                               HorizontalAlignment="Center"
+                                               x:Name="KarmeAntal">
+                                        </TextBlock>
+                                        
+
+
+                                    </StackPanel>
+                                    
+                                    
+                                        <StackPanel Orientation="Horizontal"
+                                                    Margin="0,0,0,0"
+                                                    HorizontalAlignment="Center">
+
+                                            <TextBlock Text="Rammer" 
+                                                       FontSize="36" 
+                                                       FontWeight="Bold" 
+                                                       HorizontalAlignment="Center"
+                                                       Width="200">
+                                            </TextBlock>
+                                            <TextBlock Text="*Antal*" 
+                                                       FontSize="36" 
+                                                       FontWeight="Bold" 
+                                                       HorizontalAlignment="Center"
+                                                       x:Name="RammeAntal">
+                                            </TextBlock>
+
+
+
+                                        </StackPanel>
+
+                                        <!-- ............................................2 ................... -->
+                                    <TextBlock Text="Matriale:" 
+                                               FontSize="36" 
+                                               TextDecorations="Underline" 
+                                               FontWeight="Bold" 
+                                               HorizontalAlignment="Center"
+                                           
+                                    ></TextBlock>
+                                    <StackPanel Orientation="Horizontal"
+                                                Margin="0,0,0,0"
+                                                HorizontalAlignment="Center">
+
+                                        <TextBlock Text="*Matriale*" 
+                                                   FontSize="36" 
+                                                   FontWeight="Bold" 
+                                                   HorizontalAlignment="Center"
+                                                   x:Name="Matrialevis">
+                                        </TextBlock>
+                                        
+
+
+                                    </StackPanel>
+
+                                    <!-- ............................................3 ................... -->
+                                    <TextBlock Text="Bestilling Dato:" 
+                                               FontSize="36" 
+                                               TextDecorations="Underline" 
+                                               FontWeight="Bold" 
+                                               HorizontalAlignment="Center"
+                                           
+                                    ></TextBlock>
+                                    
+
+                                        <TextBlock Text="*Bestilling dato*" 
+                                                   FontSize="36" 
+                                                   
+                                                   FontWeight="Bold" 
+                                                   HorizontalAlignment="Center"
+                                                   x:Name="BestillingsDato">
+                                        </TextBlock>
+
+
+                                    <!-- ............................................4 ................... -->
+                                    <TextBlock Text="Påbegyndt D." 
+                                               FontSize="36" 
+                                               FontWeight="Bold" 
+                                               HorizontalAlignment="Center"
+                                               TextDecorations="Underline"
+                                               
+                                           
+                                    ></TextBlock>
+                                    
+
+                                        <TextBlock Text="*Dato*" 
+                                                   FontSize="36" 
+                                                   FontWeight="Bold" 
+                                                   HorizontalAlignment="Center"
+                                                   x:Name="PobegyndtDato">
+                                        </TextBlock>
+
+
+                                    
+                                </StackPanel>
+                                <!-- ............................................ højre .............. -->
+                                <!-- ............................................1 ................... -->
+                                <StackPanel
+                                    
+                                Margin="20,75,20,20">
+                                    <TextBlock Text="Bredde:" 
+                                               FontSize="36" 
+                                               TextDecorations="Underline" 
+                                               FontWeight="Bold" 
+                                               HorizontalAlignment="Center"
+                                              
+                                           
+                                    ></TextBlock>
+                                    <StackPanel Orientation="Horizontal"
+                                                Margin="0,0,0,0"
+                                                HorizontalAlignment="Center">
+
+                                        <TextBlock Text="*Bredde" 
+                                                   FontSize="36" 
+                                                   FontWeight="Bold" 
+                                                   HorizontalAlignment="Center"
+                                                   x:Name="KarmBrede" 
+                                                  >
+                                        </TextBlock>
+                                        <TextBlock Text=" * " 
+                                                   FontSize="36" 
+                                                   FontWeight="Bold" 
+                                                   HorizontalAlignment="Center"
+                                                   >
+                                        </TextBlock>
+
+                                        <TextBlock Text="Højde*" 
+                                                   FontSize="36" 
+                                                   FontWeight="Bold" 
+                                                   HorizontalAlignment="Center"
+                                                   x:Name="KarmHojde">
+                                        </TextBlock>
+
+
+
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal"
+                                                Margin="0,0,0,0"
+                                                HorizontalAlignment="Center">
+
+                                        <TextBlock Text="*Bredde" 
+                                                   FontSize="36" 
+                                                   FontWeight="Bold" 
+                                                   HorizontalAlignment="Center"
+                                                   x:Name="RammeBrede"
+                                        >
+                                        </TextBlock>
+                                        <TextBlock Text=" * " 
+                                                   FontSize="36" 
+                                                   FontWeight="Bold" 
+                                                   HorizontalAlignment="Center"
+                                        >
+                                        </TextBlock>
+
+                                        <TextBlock Text="Højde*" 
+                                                   FontSize="36" 
+                                                   FontWeight="Bold" 
+                                                   HorizontalAlignment="Center"
+                                                   x:Name="RammeHojde">
+                                        </TextBlock>
+
+
+
+                                    </StackPanel>
+
+                                    <!-- ............................................2 ................... -->
+                                    <TextBlock Text="Tids frist:" 
+                                               FontSize="36" 
+                                               TextDecorations="Underline" 
+                                               FontWeight="Bold" 
+                                               HorizontalAlignment="Center"
+                                           
+                                    ></TextBlock>
+                                    <StackPanel Orientation="Horizontal"
+                                                Margin="0,0,0,0" 
+                                                HorizontalAlignment="Center">
+
+                                        <TextBlock Text="*Dato*" 
+                                                   FontSize="36" 
+                                                   FontWeight="Bold" 
+                                                   HorizontalAlignment="Center"
+                                                   x:Name="FristDato"
+                                                   >
+                                        </TextBlock>
+                                        
+
+
+                                    </StackPanel>
+
+                                    <!-- ............................................3 ................... -->
+                                    <TextBlock Text="Afsendt D." 
+                                               FontSize="36" 
+                                               TextDecorations="Underline" 
+                                               FontWeight="Bold" 
+                                               HorizontalAlignment="Center"
+                                           
+                                    ></TextBlock>
+                                    <StackPanel Orientation="Horizontal"
+                                                Margin="0,0,0,0"
+                                                HorizontalAlignment="Center">
+
+                                        <TextBlock Text="*Dato*" 
+                                                   FontSize="36" 
+                                                   FontWeight="Bold" 
+                                                   HorizontalAlignment="Center"
+                                                   x:Name="AFstedDato">
+                                        </TextBlock>
+                                       
+
+
+                                    </StackPanel>
+
+                                    <!-- ............................................4 ................... -->
+                                    <TextBlock Text="Steps" 
+                                               FontSize="36" 
+                                               TextDecorations="Underline" 
+                                               FontWeight="Bold" 
+                                               HorizontalAlignment="Center"
+                                           
+                                    ></TextBlock>
+                                    <!-- ..................................... første steps stack ................. -->
+                                    <StackPanel x:Name="ForsteStepStackTap2" Orientation="Horizontal"
+                                                Margin="0,0,0,0"
+                                    >
+
+                                        
+
+
+                                    </StackPanel>
+                                    <!-- ..................................... anden steps stack ................. -->
+
+                                    <StackPanel x:Name="AndenStepStackTap2"  Orientation="Horizontal"
+                                                Margin="0,0,0,0"
+                                    >
+
+                                        
+
+                                    </StackPanel>
+                                    
+                                    
+                                </StackPanel>
+                            </StackPanel>
+                            
+
+
+
+
+
+                        </Grid>
+                        
+
+                    </Grid>
+                </TabItem>
+            </TabControl>
+
+
+
+
+
+
+        </Grid>
+
+
+
+    </Grid>
+    <!-- 
+    
+    -->
+</Page>
